@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Core">
+      <UniqueIdentifier>{1dfddf07-f6e8-40a0-8f36-d9650269c4bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Parsers">
+      <UniqueIdentifier>{facb9d52-bb5d-4aa8-8883-b4e3cbfec416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utils">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-7890-abcd-ef1234567890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Analyzers">
+      <UniqueIdentifier>{b2c3d4e5-f6a7-8901-bcde-f12345678901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Core">
+      <UniqueIdentifier>{c3d4e5f6-a7b8-9012-cdef-123456789012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Interfaces">
+      <UniqueIdentifier>{d4e5f6a7-b8c9-0123-defa-234567890123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Parsers">
+      <UniqueIdentifier>{e5f6a7b8-c9d0-1234-efab-345678901234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Analyzers">
+      <UniqueIdentifier>{f6a7b8c9-d0e1-2345-fabc-456789012345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Utils">
+      <UniqueIdentifier>{a7b8c9d0-e1f2-3456-abcd-567890123456}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\ErrorCodes.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Logger.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Localization.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Parsers\DosHeaderParser.cpp">
+      <Filter>源文件\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Parsers\NtHeadersParser.cpp">
+      <Filter>源文件\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Parsers\SectionParser.cpp">
+      <Filter>源文件\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Parsers\ImportTableParser.cpp">
+      <Filter>源文件\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Parsers\ExportTableParser.cpp">
+      <Filter>源文件\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\FileMapper.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\EntropyCalculator.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Analyzers\AnalyzerManager.cpp">
+      <Filter>源文件\Analyzers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Analyzers\RiskAnalyzer.cpp">
+      <Filter>源文件\Analyzers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Rules\DangerousAPIs.cpp">
+      <Filter>源文件\Analyzers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Rules\RuleEngine.cpp">
+      <Filter>源文件\Analyzers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Signatures\ScriptManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PEAnalyzer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PE_Scanner.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Signatures\ScriptManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Core\Types.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Core\ErrorCodes.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Core\Logger.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interfaces\IParser.h">
+      <Filter>头文件\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Interfaces\IAnalyzer.h">
+      <Filter>头文件\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parsers\DosHeaderParser.h">
+      <Filter>头文件\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parsers\NtHeadersParser.h">
+      <Filter>头文件\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parsers\SectionParser.h">
+      <Filter>头文件\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parsers\ImportTableParser.h">
+      <Filter>头文件\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parsers\ExportTableParser.h">
+      <Filter>头文件\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Analyzers\AnalyzerManager.h">
+      <Filter>头文件\Analyzers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Utils\FileMapper.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Utils\EntropyCalculator.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\PEAnalyzer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Core\Localization.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Core\RiskLevel.h">
+      <Filter>头文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Analyzers\RiskAnalyzer.h">
+      <Filter>头文件\Analyzers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Rules\DangerousAPIs.h">
+      <Filter>头文件\Analyzers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Rules\RuleEngine.h">
+      <Filter>头文件\Analyzers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+.vs/ 
+x64/ 
+Debug/ 
+Release/ 
+*.exe 
+*.obj 
+*.pdb 
+*.idb 
+*.ilk 
+*.user 
+*.log 
+*.tmp 
+obj/ 
+test_build.exe 
+PE_Scanner.exe 
+.vscode/ 
+third_party/quickjs/*.o 
